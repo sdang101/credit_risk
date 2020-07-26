@@ -2,13 +2,12 @@
 
 # Oversampling
 ## Naive Random Oversampling
-                  pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.01      0.61      0.68      0.02      0.64      0.41        87
-   low_risk       1.00      0.68      0.61      0.81      0.64      0.42     17118
-
-avg / total       0.99      0.68      0.61      0.81      0.64      0.42     17205
-
+|               |   pre    |    rec   |     spe   |      f1   |     geo   |     iba   |     sup |
+| :-------------|:---------|:---------|:----------|:----------|:----------|:----------|:--------|
+|  high_risk    |   0.01   |   0.61   |    0.68   |    0.02   |    0.64   |    0.41   |      87 |
+|   low_risk    |   1.00   |   0.68   |    0.61   |    0.81   |    0.64   |    0.42   |   17118 |
+| :-------------|:---------|:---------|:----------|:----------|:----------|:----------|:--------|
+|avg / total    |   0.99   |   0.68   |    0.61   |    0.81   |    0.64   |    0.42   |   17205 |
 
 The accuracy score is moderately low at 64.6%. Recall for both high and low risk are moderately low (61%, 68%), but precision for high risk (1%) is really low. f1 score is really low for high risk, but high for low risk.
 
@@ -16,7 +15,7 @@ Random Oversampling is not a good model at classifying high and low risk credito
 
 ## SMOTE
                    pre       rec       spe        f1       geo       iba       sup
-
+| :-------------|:---------|:---------|:----------|:----------|:----------|:----------|:--------|
   high_risk       0.01      0.70      0.57      0.02      0.63      0.41        87
    low_risk       1.00      0.57      0.70      0.73      0.63      0.40     17118
 
